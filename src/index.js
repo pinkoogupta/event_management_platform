@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-
+import userRoutes from './routes/user.route.js';
 import sequelize from './db/db.js';
 import cors from 'cors';
 import cookiesParser from 'cookie-parser';
@@ -37,8 +37,9 @@ app.use(express.json());
 })();
 (async () => {
     try {
-        
+        await sequelize.sync();  // This will create the tables if they don't exist
         app.listen(PORT,()=>{
+            
             console.log(`listening on port ${PORT}`);
         });
         
@@ -48,3 +49,6 @@ app.use(express.json());
     
 })();
 
+import userRouter from "./routes/user.route.js";
+//routes declaration
+app.use("/api/users",userRouter);

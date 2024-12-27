@@ -1,3 +1,5 @@
+initial commands to initiate node project
+
 1. npm init
 2. npm i express mongoose nodemon bcrypt pg dotenv joi jsonwebtoken multer cors morgan cloudinary cookie-parser jose mongoose-aggregate-paginate-v2
 3. npm install sequelize pg pg-hstore

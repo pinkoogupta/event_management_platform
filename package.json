@@ -1,9 +1,11 @@
 {
   "name": "event_management_platform",
   "version": "1.0.0",
-  "description": "1. npm init\r 2. npm i express mongoose nodemon bcrypt pg dotenv joi jsonwebtoken multer cors morgan cloudinary cookie-parser jose mongoose-aggregate-paginate-v2\r 3. npm install sequelize pg pg-hstore\r 4.  development dependencies{\r     1. npm install --save-dev nodemon\r     2. npm install --save-dev eslint prettier\r     3. npm install --save-dev mocha chai\r }",
+  "description": "hello",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
